@@ -1,5 +1,7 @@
 // with this program we can get the price list of one site by Url, using
 // the libraries axios and cheerios.
+// I was trying to do the task as you asked me but I couldn't get the loyalty points because
+//  I couldn't log in for the CSRF Token security.
 
 // localhost:3000/price
 
@@ -35,7 +37,7 @@ axios.get(url)
       console.log(parseHTML(response.data));
     })
     
-// 
+// api with express 
 
     app.get('/price', (req, res) => {
   axios.get(url)
